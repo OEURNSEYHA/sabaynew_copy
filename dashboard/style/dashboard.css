@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI';
+   
+}
+.wrappage{
+    width: 100%;
+    height: 100%;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.side-bar{
+    width: 15%;
+    height: 100vh;
+    background-color:darkslategrey;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 25%);
+    position: sticky;
+    top: 0;
+    /* left:0; */
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.header-sidebar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.header-sidebar span{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.hide-sidebar{
+    position: fixed;
+    left: -100%;
+    transition: all 1s;
+   
+}
+.menu{
+    padding: 20px 40px;
+   
+}
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 50px;
+}
+.sub-system{
+    /* background-color: rgba(255, 255, 255, 0.098); */
+    padding: 0 20px;
+    border-radius: 5px;
+}
+.menu .sub-system ul li a{
+    font-size: 16px;
+    line-height: none;
+   justify-content: none;
+}
+
+
+.sub-item{
+   
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.menu .sub-item ul li a{
+    font-size: 16px;
+    line-height: none;
+   justify-content: none;
+}
+
+.sub-item ul li:hover{
+    width: 200px;
+    padding: 0 0 0 10px;
+    border-radius: 10px 0 0 10px;
+
+    background-color: #04AA6D;
+    color: black;
+}
+
+
+.content-dashboard{
+    width: 83.5%;
+    height:fit-content;
+    transition: all 0.5s;
+    /* background-color: white; */
+   
+   
+}
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px;
+   border-bottom: 1px solid rgba(0, 0, 255, 5%);
+ 
+    
+}
+
+.header-scroll{
+
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 25%);
+    /* box-sizing: border-box; */
+    padding: 0 20px;
+
+    position:sticky;
+    top: 0;
+}
+.box-menubar{
+    width: 30%;
+    display: flex;
+    
+    align-items: center;
+    gap: 20px;
+}
+.box-menubar span{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Brush Script MT';
+}
+.icon-menubar{
+    color:rgba(0, 0, 255, 75%);
+    cursor: pointer;
+    font-size: 20px;
+}
+.box-search{
+    width: 40%;
+    height: 40px;
+    /* background-color: blue; */
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border:2px solid rgba(0, 0, 255, 75%);
+    position: relative;
+   border-radius: 5px;
+   overflow: hidden;
+}
+
+.box-search select{
+    outline: none;
+    border: none;
+    width: fit-content;
+    height: 100%;
+    position:absolute;
+    right: 10%;
+    background: transparent;
+    color: rgba(0, 0, 255, 75%);
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 1px;
+}
+
+
+.box-search .iconsearch{
+    width: 10%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+}
+.box-search input{
+    width: 70%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    /* outline:1px solid yellow; */
+    
+}
+
+.box-search input::placeholder{
+    color:blue ;
+}
+
+.setting{
+    width: 30%;
+    color: blue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.setting .admin{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: blueviolet;
+    position: relative;
+}
+.admin img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.admin:hover .subprofile{
+    display: flex;
+}
+.subprofile{
+    position: absolute;
+    width: 250px;
+    height: 230px;
+    top: 105%;
+    right: 0px;
+    background-color:white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 3px 0px 15px rgba(0, 0, 0, 25%);
+    display: none;
+    z-index: 10;
+}
+
+.subprofile .profile{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+.subprofile .profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.line{
+    width: 100%;
+    border: 1px solid rgb(21, 21, 26);
+}
+.name-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+.name-email span:nth-child(1){
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+.btn-logout{
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+.iconbell{
+    margin-left:280px ;
+    font-size: 20px;
+}
+
+
+.content-information{
+    width: 100%;
+    /* height: 100vh; */
+    /* overflow-y: scroll; */
+}
+
+.content-data{
+    overflow: scroll;
+    width:100%;
+}
+.bar-content-information{
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    position: sticky;
+    top: 80px;
+    border: 1px solid rgba(0, 0, 0, 10%);
+    border-radius: 5px;
+}
+.btn-add{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0, 0, 255, 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.option-show-data{
+    width: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+   
+}
+
+.option-show{
+    width:auto;
+    height:30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 255, 75%);
+    font-size: 16px;
+    color: gray;
+}
+
+.slide-show{
+    width:auto;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-back{
+    width: 50px;
+    height: 30px;
+    background-color: rgba(0, 0, 255,75%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+
+}
+
+.btn-all-ofpage{
+    font-size: 16px;
+    width: auto;
+    height: 30px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    color: gray;
+    border: 1px solid  rgba(0, 0, 255, 75%);
+}
+.btn-next{
+    width: 50px;
+    height: 30px;
+    background-color: rgba(0, 0, 255, 75%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+#tbl-data {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width:100%;
+    font-family: 'Segoe UI';
+  }
+  
+#tbl-data th {
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+    width: 1000px;
+  }
+  #tbl-data td{
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+  #tbl-data tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #tbl-data tr:hover {background-color: #ddd;}
+  
+  #tbl-data th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkcyan;
+    color:white;
+  }
+  .btn-edit{
+    color: rgba(0, 0, 255, 75%);
+    font-size: 18px;
+    
+  }
+
+  .popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 70%);
+    cursor:pointer;
+    overflow: scroll;
+}
+.loadingpage{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 70%);
+}
+
+.loadingpage i{
+    color: white;
+    font-size: 50px;
+}
+  

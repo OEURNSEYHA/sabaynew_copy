@@ -1,0 +1,196 @@
+:root{
+    --font:'Roboto', sans-serif, 'Battambang', cursive;;
+    --font-koulen:'Roboto', sans-serif,  'Koulen', cursive;
+}
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+   
+}
+body{
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+}
+/* header */
+
+
+
+.wrappage{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+
+:root{
+    --font:'Roboto', sans-serif, 'Battambang', cursive;;
+    --font-koulen:'Roboto', sans-serif,  'Koulen', cursive;
+}
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+   
+}
+i.icon-menubar{
+    color: white;
+    margin-left:  20px;
+   display: none;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color:red;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+
+   
+}
+.content-header{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    transition: all 0.6s;
+}
+.content-header ul{
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   gap: 35px;
+   align-items: center;
+   height: 100%;
+   display: flex;
+}
+.content-header ul li{
+    height:100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.active{
+    background-color: rgba(0, 0, 0, 10%)
+}
+
+.active-hide-header{
+    background-color: rgb(115, 103, 177);
+}
+
+.content-header ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--font-koulen);
+}
+
+
+
+/*Extra  large devices (large desktops, 1200px and up)*/
+@media (min-width: 1540px) {
+    .content-header{
+        width: 1400px;
+    }
+
+    .wrappage-home{
+        width: 1400px;
+    }
+}
+@media (min-width: 1200px) {
+    
+  
+}
+/*large devices (desktop, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px){
+
+}
+/*Medium devices (tables, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+ 
+}
+/*small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    i.icon-menubar{
+        display: flex;
+        
+    }
+    .content-header{
+        position: fixed;
+        top:50px;
+        left:0;
+        background-color: black;
+        width: 100%;
+        margin: 0 -100%;
+     }
+   
+
+    .content-header ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content-header ul li{
+        width: 100%;
+        height:0;
+        padding: 20px  20px;
+    }
+    .active{
+        background-color: blueviolet;
+    }
+    
+}
+/*Extra   small devices (portrait phones, less than 576)*/
+@media (max-width: 575.98px) {
+ 
+    i.icon-menubar{
+        display: flex;
+    }
+
+    .content-header{
+        position: fixed;
+        top:50px;
+        left:0;
+        background-color: black;
+        width: 100%;
+        margin: 0 -100%;
+        width: 0;
+
+     }
+   
+
+    .content-header ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content-header ul li{
+        width: 100%;
+        height:0;
+        padding: 20px  20px;
+    }
+    .active{
+        background-color: blueviolet;
+    }
+   
+}

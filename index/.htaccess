@@ -1,0 +1,22 @@
+# Options -Indexes
+# DirectoryIndex index.php
+
+
+# AddDefaultCharset UTF-8
+# RewriteEngine on 
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} !-f 
+
+# RewriteRule ^([^/]*)$ index.php?mid=$1 [QSA]
+# RewriteRule ^([^/]*)/$ index.php?mid=$1 [QSA]
+
+
+# RewriteRule ^([^/]*)/([^/]*)$ index.php?mid=$1&item=$2 [QSA]
+# RewriteRule ^([^/]*)/([^/]*)/$ index.php?mid=$1&item=$2 [QSA]
+
+# <Files .htaccess>
+
+#     order allow,deny
+#     deny from all
+
+# </Files>
