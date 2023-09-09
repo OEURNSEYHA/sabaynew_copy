@@ -20,7 +20,8 @@ body{
 .side-bar{
     width: 15%;
     height: 100vh;
-    background-color:darkslategrey;
+    background-color:white;
+    color: black;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 25%);
     position: sticky;
     top: 0;
@@ -34,12 +35,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid gray;
 }
 .header-sidebar span{
     font-size: 20px;
     font-weight: 600;
-    color: white;
+    
 }
 .hide-sidebar{
     position: fixed;
@@ -48,7 +49,7 @@ body{
    
 }
 .menu{
-    padding: 20px 40px;
+    padding: 2px 20px;
    
 }
 .menu ul{
@@ -57,29 +58,29 @@ body{
     margin: 0;
 }
 .menu ul li a{
-    color: white;
+    color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 500;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    line-height: 50px;
+    line-height: 40px;
 }
 .sub-system{
     /* background-color: rgba(255, 255, 255, 0.098); */
-    padding: 0 20px;
     border-radius: 5px;
+    padding: 0 10px;
 }
 .menu .sub-system ul li a{
-    font-size: 16px;
-    line-height: none;
+    font-size: 14px;
+    line-height: 30px;
    justify-content: none;
 }
 
 
 .sub-item{
    
-    padding: 0 20px;
     border-radius: 5px;
 }
 
@@ -306,13 +307,12 @@ body{
     margin-top: 30px;
     position: sticky;
     top: 80px;
-    border: 1px solid rgba(0, 0, 0, 10%);
-    border-radius: 5px;
+
 }
 .btn-add{
     width: 100px;
     height: 30px;
-    background-color: rgba(0, 0, 255, 75%);
+    background-color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,8 +335,9 @@ body{
 }
 
 .option-show{
-    width:auto;
-    height:30px;
+    width:50px;
+    height:25px;
+    padding: 0 10px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 255, 75%);
     font-size: 16px;
@@ -354,8 +355,8 @@ body{
 
 .btn-back{
     width: 50px;
-    height: 30px;
-    background-color: rgba(0, 0, 255,75%);
+    height: 25px;
+    background-color: gray;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -368,7 +369,7 @@ body{
 .btn-all-ofpage{
     font-size: 16px;
     width: auto;
-    height: 30px;
+    height: 25px;
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
@@ -380,8 +381,8 @@ body{
 }
 .btn-next{
     width: 50px;
-    height: 30px;
-    background-color: rgba(0, 0, 255, 75%);
+    height: 25px;
+    background-color: gray;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -394,27 +395,26 @@ body{
     border-collapse: collapse;
     width:100%;
     font-family: 'Segoe UI';
+    background-color: white;
+    box-shadow: 10px 3px 15px rgba(0, 0, 0, 25%);
   }
   
 #tbl-data th {
     /* border: 1px solid #ddd; */
     padding: 8px;
     width: 1000px;
+    background-color: gray;
   }
-  #tbl-data td{
-    border: 1px solid #ddd;
-    padding: 5px;
-  }
-  #tbl-data tr:nth-child(even){background-color: #f2f2f2;}
+
+
   
   #tbl-data tr:hover {background-color: #ddd;}
   
   #tbl-data th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+
     text-align: left;
-    background-color: darkcyan;
-    color:white;
+    color: black;
+    background-color:white;
   }
   .btn-edit{
     color: rgba(0, 0, 255, 75%);
