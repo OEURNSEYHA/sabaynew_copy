@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="setting">
-                    <input type="text" name="iduser" id="iduser" value="<?php echo  $id ?>" hidden>
+                    <input type="text" name="iduser" id="iduser" value="<?php echo  $userid?>" hidden>
 
 
                     <div class="admin">
